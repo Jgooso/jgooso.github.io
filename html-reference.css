@@ -1,3 +1,21 @@
-h1 {
-color-background:powderblue;
+h2{
+  background-color:DodgerBlue;
+  border: 2px solid black;
+  color:white
+}
+h3{
+  font:arial 2px;
+}
+.example{
+  background-color:WhiteSmoke;
+  border: solid WhiteSmoke 10px;
+  box-shadow: 5px 5px 2.5px #888888;
+}
+.example p{
+  background-color:white;
+  border-left:DodgerBlue 5px solid;
+
+}
+.display{
+  border:solid 1px black;
 }
