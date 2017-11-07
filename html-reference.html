@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>HTML Refernce Page</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    
+    <title>repl.it</title>
+    <link href="html-reference.css" rel="stylesheet" type="text/css" />
+    <style>
+</style>
   </head>
   <body>
     <h1>HTML Reference Page</h1>
-    <a href="/index.html">Home Page</a>
     <table>
       <tr>
         <th>Name</th>
@@ -21,19 +21,19 @@
       <td><a href="#2">HTML</a></td>
       <td>&lt;html&gt;</td>
       <td>&lt;/html&gt;</td>
-      <td> &lt;head&gt;<br>This is how it might be used</br>&lt;/head&gt;</td>
+      <td>> &lt;head&gt;<br>This is how it might be used</br>&lt;/head&gt;</td>
        </tr>
        <tr>
       <td><a href="#3">Header</a></td>
       <td>&lt;head&gt;</td>
       <td>&lt;/head&gt;</td>
-      <td> &lt;head&gt;<br>This is how it might be used</br>&lt;/head&gt;</td>
+      <td>> &lt;head&gt;<br>This is how it might be used</br>&lt;/head&gt;</td>
        </tr>
        <tr>
       <td><a href="#4">Body</a></td>
       <td>&lt;body&gt;</td>
       <td>&lt;/body&gt;</td>
-      <td> &lt;body&gt;<br>This is how it might be used</br>&lt;/body&gt;</td>
+      <td>> &lt;body&gt;<br>This is how it might be used</br>&lt;/body&gt;</td>
        </tr>
       <tr>
       <td><a href="#5">Heading</a></td>
@@ -80,7 +80,7 @@
        <tr>
       <td><a href="#12">List</a></td>
       <td>&lt;ul&gt;&lt;ol&gt;&lt;li&gt;</td>
-      <td>&lt;/ul&gt;&lt;/ol&gt;&lt;/li&gt;</td>
+      <td>>&lt;/ul&gt;&lt;/ol&gt;&lt;/li&gt;</td>
       <td>&lt;ul&gt;<br>&lt;li&gt;Example&lt;/li&gt;</br>&lt;/ul&gt;</td>
       </tr>
        <tr>
@@ -100,7 +100,7 @@
     </table>
     <h2 id ="1">What every HTML page needs</h2>
     <p>DOCTYPE, heading, body, html</p>
-    <hr>
+    
     
     <h2 id="2">HTML Element</h2>
     
@@ -109,10 +109,11 @@
    
    <h3>Syntax</h3>
    <p> &lt;html&gt;&lt;/html&gt;</p>
+   <div class=example>
    <h3>Example</h3>
-   <p> &lt;html&gt;<br>This is how it might be used</br>&lt;/html&gt; </p>
-<a href="https://www.w3schools.com/html/html_basic.asp">w3 Schools</a>
-   <hr>
+   <p > &lt;html&gt;<br>This is how it might be used</br>&lt;/html&gt; </p>
+   </div>
+   
 
  <h2 id="3">Header Element</h2>
     
@@ -121,10 +122,11 @@
    
    <h3>Syntax</h3>
    <p> &lt;head&gt;&lt;/head&gt;</p>
+   <div class=example>
    <h3>Example</h3>
    <p> &lt;head&gt;<br>This is how it might be used</br>&lt;/head&gt; </p>
-<a href="https://www.w3schools.com/html/html_basic.asp">w3 Schools</a>
-   <hr>
+       </div>
+   
    <h2 id="4">Body Element</h2>
     
     <h3>Description</h3>
@@ -132,10 +134,11 @@
    
    <h3>Syntax</h3>
    <p> &lt;body&gt;&lt;/body&gt;</p>
+   <div class=example>
    <h3>Example</h3>
    <p> &lt;body&gt;<br>This is how it might be used</br>&lt;/body&gt; </p>
-    <a href="https://www.w3schools.com/html/html_basic.asp">w3 Schools</a>
-    <hr>
+        </div>
+    
     <h2 id="5">Headings</h2>
     
     <h3>Description</h3>
@@ -143,12 +146,15 @@
    
    <h3>Syntax</h3>
    <p> &lt;h1&gt;&lt;/h1&gt &lt;h2&gt;&lt;/h2&gt; &lt;h3&gt;&lt;/h3&gt; </p>
+   <div class=example>
    <h3>Example</h3>
    <p> &lt;1h&gt;This is how it might be used&lt;/h1&gt; </p>
+       </div>
+       <div class=display>
    <h3>Display</h3>
 <h1>This is what it looks like</h1>
-<a href="https://www.w3schools.com/html/html_headings.asp">w3 schools</a>
-<hr>
+</div>
+
 
     <h2 id="6">Paragraph Element</h2>
     
@@ -157,14 +163,15 @@
     
     <h3>Syntax</h3>
     <p> &lt;p&gt;&lt;/p&gt; </p>
-    
+    <div class=example>
     <h3>Example</h3>
     <p>&lt;p&gt;This is how the paragraph element is used&lt;/p&gt;</p>
-    
+        </div>
+        <div class=display>
     <h3>Display</h3>
     <p>This is what it looks like</p>
-  <a href="https://www.w3schools.com/html/html_paragraphs.asp">w3 schools</a>
-  <hr>  
+     </div>
+    
     <h2 id="7">Break Element</h2>
     
     <h3>Description</h3>
@@ -172,14 +179,15 @@
     
     <h3>Syntax</h3>
     <p> &lt;br&gt;&lt;/br&gt; </p>
-    
+    <div class=example>
     <h3>Example</h3>
     <p>&lt;p&gt;This is how the &lt;br&gt;break element&lt;/br&gt; is used&lt;p&gt;</p>
-    
+        </div>
+        <div class=display>
     <h3>Display</h3>
     <p>This is what <br>it looks </br>like</p>
-<a href="https://www.w3schools.com/html/html_paragraphs.asp">w3 schools</a>
-    <hr>
+     </div>
+    
     <h2 id="8">Lines Element</h2>
     
     <h3>Description</h3>
@@ -187,15 +195,18 @@
     
     <h3>Syntax</h3>
     <p> &lt;hr&gt</p>
-    
+    <div class=example>
     <h3>Example</h3>
     <p>This is the top<br>&lt;hr&gt;</br>This is below</p>
-    <p></p>
     
+        </div>
+        <div class=display>
     <h3>Display</h3>
     <hr>
+     </div>
     
-   <hr> 
+    
+    
     <h2 id="9">Comment Element</h2>
     
     <h3>Description</h3>
@@ -203,14 +214,15 @@
     
     <h3>Syntax</h3>
     <p></p>
-    
+    <div class=example>
     <h3>Example</h3>
     <p> &lt;!-- This is how it is used --&gt; </p>
-    
+        </div>
+        <div class=display>
     <h3>Display</h3>
     <p>You can't see it</p>
-<a href="https://www.w3schools.com/html/html_comments.asp">w3 schools</a>
-    <hr>
+     </div>
+    
     
     <h2 id="10">Link Element</h2>
     
@@ -219,14 +231,15 @@
     
     <h3>Syntax</h3>
     <p> &lt;a&gt;&lt;/a&gt; </p>
-    
+    <div class=example>
     <h3>Example</h3>
     <p>&lt;a href="link.com"&gt;What link shows&lt;a&gt;</p>
-    
+        </div>
+        <div class=display>
     <h3>Display</h3>
-    <a href="https://www.w3schools.com/html/html_links.asp">This is how it looks.</a>
+    <a href="https://www.w3schools.com/html/default.asp">This is how it looks</a>
+     </div>
     
-   <hr> 
     <h2 id="11">Images Element</h2>
     
     <h3>Description</h3>
@@ -234,14 +247,15 @@
     
     <h3>Syntax</h3>
     <p> &lt;img&gt;&lt;/img&gt; </p>
-    
+    <div class=example>
     <h3>Example</h3>
     <p>&lt;img src="image.link"&gt;What if image doesn't show&lt;/img&gt;</p>
-    
+        </div>
+        <div class=display>
     <h3>Display</h3>
     <img src="https://static.pexels.com/photos/34950/pexels-photo.jpg"alt=Picture width="200" height="200"</a>
-<a href="https://www.w3schools.com/html/html_images.asp">w3 schools</a>
-   <hr> 
+     </div>
+    
     <h2 id ="12">List Element</h2>
     
     <h3>Description</h3>
@@ -249,10 +263,11 @@
     
     <h3>Syntax</h3>
     <p> &lt;ul&gt;&lt;/ul&gt; &lt;li&gt;&lt;ol&gt;&lt;/ol&gt;</p>
-    
+    <div class=example>
     <h3>Example</h3>
     <p>&lt;ul&gt;<br>&lt;li &gt;This is&lt;/li &gt; </br>&lt;li &gt;How it is used &lt;/li &gt;<br>&lt;/ul&gt;</br></p>
-    
+        </div>
+        <div class=display>
     <h3>Display</h3>
     <ul>
       <li>This</li>
@@ -261,8 +276,8 @@
       <li>it</li>
       <li>looks</li>
     </ul>
-<a href="https://www.w3schools.com/html/html_lists.asp">w3 schools</a>
-   <hr> 
+     </div>
+    
     <h2 id="13">Table Element</h2>
     
     <h3>Description</h3>
@@ -270,10 +285,11 @@
     
     <h3>Syntax</h3>
     <p>&lt;table&gt;&lt;/table&gt;&lt;tr&gt;&lt;/tr&gt;&lt;td&gt;&lt;/td&gt;&lt;th&gt;&lt;/th&gt;</p>
-    
+    <div class=example>
     <h3>Example</h3>
     <p>&lt;table&gt;<br>&lt;tr&gt;</br>&lt;th&gt;This is how&lt;/th&gt;<br>&lt;/tr&gt;</br>&lt;tr&gt;</br>&lt;td&gt;It is used&lt;/td&gt;<br>&lt;/tr&gt;</p>
-    
+        </div>
+        <div class=display>
     <h3>Display</h3>
    <Table>
      <tr>
@@ -287,8 +303,8 @@
        <td>like</td>
      </tr>
    </Table>
-<a href="https://www.w3schools.com/html/html_tables.asp">w3 schools</a>
-   <hr>
+    </div>
+   
    <h2 id="14">Block Element</h2>
     
     <h3>Description</h3>
@@ -297,15 +313,17 @@
     <h3>Syntax</h3>
     <p> &lt;div&gt;&lt;/div&gt; </p>
     
+    <div class=example>
     <h3>Example</h3>
     <p>&lt;div&gt;<br>&lt;p&gt; This is how&lt;/p&gt;</br>&lt;p&gt;it is used&lt;/p&gt;<br>&lt;/div&gt;</p>
-    
+    </div>
+    <div class=display>
     <h3>Display</h3>
     <div>
       <p>This is what </p>
       <p>it looks like</p>
     </div>
-    
-   <a href="https://www.w3schools.com/html/html_blocks.asp">w3 schools</a>
+    </div>
+   
 </body>
 </html>
