@@ -14,6 +14,7 @@ h3{
 .example p{
   background-color:white;
   border-left:DodgerBlue 5px solid;
+  box-shadow: 5px 5px 2.5px #888888
 
 }
 .display{
