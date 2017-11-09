@@ -1,51 +1,48 @@
+body{
+  background-color:black
+}
 h2{
   background-color:DodgerBlue;
-  border: 2px solid black;
-  color:white;
-   box-shadow: 5px 5px 2.5px #888888;
+  color:black;
+  border: DodgerBlue solid 5px;
+  font-family: arial, Sans-Serif
 }
-h3{
-  font:arial 5px ;
+p{
+  font-family: arial, Sans-Serif
+}
+a{
+  color:powderblue;
 }
 .mystyle{
   background-color:WhiteSmoke;
   border: solid WhiteSmoke 5px;
- /*box-shadow: 10px 0px 4px #888888;*/
- box-shadow: 5px 5px 2.5px #888888;
 }
 .mystyle p{
   background-color:white;
   border-left:DodgerBlue 5px solid;
   box-shadow: 5px 5px 2.5px #888888;
 }
-.mystyle2{
-  background-color:WhiteSmoke;
-  border: solid WhiteSmoke 5px;
-  box-shadow: 5px 0px 4px #888888;
-}
-.mystyle2 p{
-  background-color:white;
-  border-left:DodgerBlue 5px solid;
-  box-shadow: 5px 5px 2.5px #888888;
-}
 .display{
-  border-left:solid 1px black;
-  border-right:solid 1px black;
-  border-bottom:solid 1px black;
-  border-top:solid 1px white;
-  box-shadow: 5px 5px 2.5px #888888;
-}
-
-table, th, td {
-   border: 1px solid black;
-}
- tr:nth-child(even){background-color: WhiteSmoke}
-#p1{
-   box-shadow: 5px 5px 2.5px #888888;
+  border:solid 1px white;
+  background-color: black;
+  color:white;
 }
 #p2{
   background-color: DodgerBlue;
-  box-shadow: 5px 5px 2.5px #888888;
-  color:white;
-  border:solid black 2px;
+  color:black;
 }
+#p3{
+  box-shadow:5px 5px 2.5px #999999;
+  border-left:DodgerBlue solid 5px;
+  background-color: white;
+}
+.t1 td,.t1 th{
+  color:white;
+  border:white solid 1px;
+  font-family:Arial, Sans-Serif;
+  
+}
+ .t1 th{
+   background-color:DodgerBlue;
+   color:black;
+ }
