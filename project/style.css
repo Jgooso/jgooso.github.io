@@ -1,0 +1,20 @@
+body{
+  background-color:powderblue;
+}
+table,td,th{
+  border:solid black 2px;
+  border-collapse:collapse;
+}
+table{
+  margin:auto;
+  float:center;
+}
+.text{
+  display: inline-block;
+  border:#009999 solid 2px;
+  width:200px;
+  height:200px
+}
+ul{
+  border:dodgerblue solid 1px;
+}
