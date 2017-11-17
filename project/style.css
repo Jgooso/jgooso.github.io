@@ -1,20 +1,28 @@
 body{
   background-color:powderblue;
 }
-table,td,th{
+.table,td,th{
   border:solid black 2px;
   border-collapse:collapse;
 }
-table{
+.table{
   margin:auto;
   float:center;
 }
-.text{
-  display: inline-block;
+.mythoughts{
+  float:left;
   border:#009999 solid 2px;
-  width:200px;
-  height:200px
+  width:300px;
+  text-align:center;
 }
-ul{
-  border:dodgerblue solid 1px;
+.summary{
+  float:right;
+  border:#009999 solid 2px;
+  width:300px;
+  text-align:center;
+}
+iframe{
+  width:660px;
+  height:250px;
+  float:center;
 }
