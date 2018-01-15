@@ -92,8 +92,8 @@ input[type=text] {
 <div class="container">
   <div class="row">
     <div class="column left">
-      <span class="dot" style="background:#red;"></span>
-      <span class="dot" style="background:#yellow;"></span>
+      <span class="dot" style="background:red;"></span>
+      <span class="dot" style="background:yellow;"></span>
       <span class="dot" style="background:green;"></span>
     </div>
     <div class="column middle">
