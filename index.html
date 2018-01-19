@@ -1,82 +1,81 @@
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="icon" href="images//favicon.ico">
-
-<title>JoshReads</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="/project/layout.css">
-<link rel="stylesheet" type="text/css" href="/project/style.css">
-</head>
-<body>
-
-<div class="header">
-  <h1>JoshReads</h1>
-  <p>Book reviews by Joshua Goodman</p>
-</div>
-
-<div class="topnav">
-  <a href="/index.html">Home</a>
-  <a class="active" href="/project/page1.html">The Hobbit</a>
-  <a href="/project/page2.html">LoTR:Fellowship of the Ring</a>
-  <a href="/project/page3.html">LoTR:Two Towers</a>\
-  <a href="/project/page4.html">LoTR:Return of the King</a>
-</div>
-
-<div class="row content">
-  <div class="column side">
-    <h2>Biography</h2>
-      <img src="/images/me.jpg" alt="me"width="100" height="100">
-      <p>Born on February 20,2017, Josh Goodman has loved reading books ever since he learned to read at the age of 1 month. He loved reading so much, he ran out of books to read. So he started re-reading books and started discussing books. He decided that,"I should share my opinion on the internet".And so, JoshReads was born</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Homepage</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <style>
+      p{
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <div class="container">
+  <div class="row">
+    <div class="column left">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+    </div>
+    <div class="column middle">
+      <form method="get" action="https://www.google.com/search">
+      <input type="text" name="q" size="31" value="">
+</form>
+    </div>
+    <div class="column right">
+      <div style="float:right">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
   </div>
-  <div class="column middle">
-    <h2>Main Content</h2>
-    <p>Here on JoshReads, we take pride in only giving the best reviews from the best critics. We read each book with only the intention of entertainment. So we can tell you how good it is for an entertaining read.</p>
-    <table class="table">
-      <tr>
-        <th>Book Name</th>
-        <th>Rating</th>
-      </tr>
-      <tr>
-        <td>The Hobbit</td>
-        <td><img src="/images/4.5 stars.png" width="150" height="30"></td>
-      </tr>
-      <tr>
-        <td>LotR:Felloswhip of the Ring</td>
-        <td><img src="/images/4 stars.svg" width="150" height="30"></td>
-      </tr>
-      <tr>
-        <td>LotR:Two Towers</td>
-        <td><img src="/images/4.5 stars.png" width="150" height="30"></td>
-      </tr>
-      <tr>
-        <td>LotR:Return of the King</td>
-        <td><img src="/images/4.5 stars.png" width="150" height="30"></td>
-      </tr>
-      </table>
-      
-  </div>
-  <div class="column side">
-    <h2>Opinions on the reviews on the website</h2>
-    <ul>
-      <li>"He completely changed my views of life"-Booklife420</li>
-      <li>"Wished he made this website sooner"-XXXBooking itXXX</li>
-      <li>"I have found the way because of him"-Opah Winfey"</li>
-    </ul>
-  </div>
-</div>
 
-<div class="footer">
-  <p>©JoshReads 65935493549364 </p>
-  <p>Phone Number:(858)-555-IlikeBooks@boooooks.gov</p> 
- <p>Email:IlikeBooks@Ilikebooks.books.com/booksisgood.gov/https://booooooooooooooks.books</p>
- <a href="/exercises/index.html">Exercises page</a>
-  <a href="/css-exercises/index.html">Css exercises Page</a>
-  <a href="/html-reference">HTML Reference page
- 
+  <div class="content">
+    <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="/project/page1.html">Links</a>
+  <a href="/project/page2.html.html">Homework</a>
+  <a href="/project/page2.html.html">Calendar</a>
 </div>
-  
-</body>
+</div>
+</div>
+   <p id="demo"></p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jun 12, 2018 13:50:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+  </div>
+
+    
+  </body>
 </html>
