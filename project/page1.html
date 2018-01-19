@@ -1,64 +1,116 @@
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>The Hobbit</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="layout.css">
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div class="header">
-  <h1>The Hobbit</h1>
-</div>
-
-<div class="topnav">
-  <a href="/index.html">Home</a>
-  <a class="active" href="page1.html">The Hobbit</a>
-  <a href="page2.html">LoTR:Fellowship of the Ring</a>
-  <a href="page3.html">LoTR:Two Towers</a>\
-  <a href="page4.html">LoTR:Return of the King</a>
-</div>
-
-<div class="row content">
-  <div class="column side">
-    <img src="/images/Hobbit.jpg"alt="me" width="300" height="450">
-  </div>
-  <div class="column middle">
-    
-    <div class="mythoughts">
-      <h2>My Thoughts</h2>
-      <p>I lik this book it gud. I lik how the awthor sez things in storey. It funy.Te dwarfes dont do tings in latar parts ov book. Dwarfes are boring and dont do much. I giv it for owt ov fiv stars</p>
-      <img src="/images/4.5 stars.png" width="150" height="30">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Homework</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <div class="container">
+  <div class="row">
+    <div class="column left">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
     </div>
-    
-    <div class="summary">
-      <h2>Summary</h2>
-      <p>Bibly Bagger go with dwarf Thorn Treewall,Grayman the Wiz and cru to montain to fight bad dragon. He allsow getz help from oter dwarfes like old dwarf, fat dwarf, and young dwarf</p>
-      <img src="/images/Bilbo.jpg"width="150"height="30">
+    <div class="column middle">
+      <form method="get" action="https://www.google.com/search">
+      <input type="text" name="q" size="31" value="">
+</form>
     </div>
-    <center>
-  <iframe src="https://www.youtube.com/embed/SDnYMbYB-nU" frameborder="0" allowfullscreen></iframe>
-   </center>
+    <div class="column right">
+      <div style="float:right">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
   </div>
-  <div class="column side">
-    <h2>Places you can Buy book</h2>
-    <ul class="shop">
-      <li><a href="https://goo.gl/T2j5P9">Amazon</a></li>
-      <li><a href="https://goo.gl/gjKnk3">Barnes and Nobles</a></li>
-      <li><a href="https://goo.gl/NtVomj">eBay</a></li>
-    </ul>
-  </div>
+</div>
+  <div class="content">
+    <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="School.html">Links</a>
+  <a href="Homework.html">Homework</a>
+  <a href="Calendar.html">Calendar</a>
+</div>
+   <div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
 </div>
 
-<div class="footer">
-  <p>©JoshReads 65935493549364 </p>
-  <p>Phone Number:(858)-555-IlikeBooks@boooooks.gov</p> 
-  <p>Email:IlikeBooks@Ilikebooks.books.com/booksisgood.gov/https://booooooooooooooks.books</p>
-</div>
+<ul id="myUL">
   
-</body>
-</html>
+</ul>
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+  </div>
+
+    
   </body>
 </html>
